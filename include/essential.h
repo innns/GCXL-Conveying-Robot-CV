@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) @innns.
+ *  Copyright (C) @innns 2021.
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -13,14 +13,14 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program. If not, see <http://www.gnu.org/licenses/>.
- * @Descripttion: 
+ * @Descripttion: 头文件依赖放一起了
  * @version: 1.0
  * @Author: innns
  * @Email: ureinsecure@outlook.com
  * @Date: 2021-08-04 16:06:41
  * @LastEditors: innns
  * @LastEditTime: 2021-09-17 23:31:56
- * @FilePath: /junkcar/include/essential.h
+ * @FilePath: /GCXL-Conveying-Robot-CV/include/essential.h
 */
 #include <iostream>
 #include <opencv2/opencv.hpp>

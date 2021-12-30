@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) @innns.
+ *  Copyright (C) @innns 2021.
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -20,10 +20,10 @@
  * @Date: 2021-09-17 17:25:26
  * @LastEditors: innns
  * @LastEditTime: 2021-09-18 06:57:06
- * @FilePath: /junkcar/src/Detector.cpp
+ * @FilePath: /GCXL-Conveying-Robot-CV/src/Detector.cpp
 */
 /*
- *  Copyright (C) @innns.
+ *  Copyright (C) @innns 2021.
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -44,7 +44,7 @@
  * @Date: 2021-02-03 14:39:54
  * @LastEditors: innns
  * @LastEditTime: 2021-09-17 18:19:57
- * @FilePath: /junkcar/src/Detector.cpp
+ * @FilePath: /GCXL-Conveying-Robot-CV/src/Detector.cpp
 */
 
 #include "Detector.h"

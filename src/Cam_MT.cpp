@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) @innns.
+ *  Copyright (C) @innns 2021.
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
  * @Date: 2021-07-02 18:05:17
  * @LastEditors: innns
  * @LastEditTime: 2021-08-23 15:31:54
- * @FilePath: /junkcar/src/Cam_MT.cpp
+ * @FilePath: /GCXL-Conveying-Robot-CV/src/Cam_MT.cpp
 */
 #include "Cam_MT.h"
 

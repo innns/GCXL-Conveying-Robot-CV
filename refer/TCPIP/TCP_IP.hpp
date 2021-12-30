@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) @innns.
+ *  Copyright (C) @innns 2021.
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
  * @Date: 2021-05-06 17:55:18
  * @LastEditors: innns
  * @LastEditTime: 2021-05-06 18:07:11
- * @FilePath: /junkcar/include/TCP/TCP_IP.hpp
+ * @FilePath: /GCXL-Conveying-Robot-CV/include/TCP/TCP_IP.hpp
 */
 #include "TCP_Client.hpp"
 #include "TCP_Server.hpp"

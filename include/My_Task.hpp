@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) @innns.
+ *  Copyright (C) @innns 2021.
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -13,14 +13,14 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program. If not, see <http://www.gnu.org/licenses/>.
- * @Descripttion: 
+ * @Descripttion: 任务模块。需要完成的各个单独的任务在这里实现。
  * @version: 2.0
  * @Author: innns
  * @Email: ureinsecure@outlook.com
  * @Date: 2021-02-03 14:39:54
  * @LastEditors: innns
  * @LastEditTime: 2021-09-17 23:08:23
- * @FilePath: /junkcar/include/My_Task.hpp
+ * @FilePath: /GCXL-Conveying-Robot-CV/include/My_Task.hpp
 */
 
 #ifndef MY_TASK_HPP

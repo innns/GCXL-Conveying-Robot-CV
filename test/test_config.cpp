@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) @innns.
+ *  Copyright (C) @innns 2021.
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
  * @Date: 2021-05-08 19:12:41
  * @LastEditors: innns
  * @LastEditTime: 2021-05-08 23:11:40
- * @FilePath: /junkcar/test/test_config.cpp
+ * @FilePath: /GCXL-Conveying-Robot-CV/test/test_config.cpp
 */
 
 #include "My_Test.hpp"

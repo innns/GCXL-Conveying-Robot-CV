@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) @innns.
+ *  Copyright (C) @innns 2021.
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -13,14 +13,14 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program. If not, see <http://www.gnu.org/licenses/>.
- * @Descripttion: 现在参数在640*480下
+ * @Descripttion: 相机模块。连接相机，确定参数等。
  * @version: 2.0
  * @Author: innns
  * @Email: ureinsecure@outlook.com
  * @Date: 2021-02-03 14:39:54
  * @LastEditors: innns
  * @LastEditTime: 2021-09-14 00:49:42
- * @FilePath: /junkcar/include/USB_Cam.h
+ * @FilePath: /GCXL-Conveying-Robot-CV/include/USB_Cam.h
 */
 
 #ifndef USB_Cam_H

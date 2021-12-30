@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) @innns.
+ *  Copyright (C) @innns 2021.
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
  * @Date: 2021-02-03 14:39:54
  * @LastEditors: innns
  * @LastEditTime: 2021-08-24 19:43:25
- * @FilePath: /junkcar/src/USB_Cam.cpp
+ * @FilePath: /GCXL-Conveying-Robot-CV/src/USB_Cam.cpp
 */
 
 #include "USB_Cam.h"

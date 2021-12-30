@@ -1,5 +1,5 @@
 /*
- * Copyright (C) @innns.
+ * Copyright (C) @innns 2021.
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -16,7 +16,7 @@
  * @Date: 2021-02-03 14:39:54
  * @LastEditors: innns
  * @LastEditTime: 2021-09-17 21:36:57
- * @FilePath: /junkcar/test/test_detector.cpp
+ * @FilePath: /GCXL-Conveying-Robot-CV/test/test_detector.cpp
 */
 #include <opencv2/imgproc.hpp>
 #include <opencv2/barcode.hpp>

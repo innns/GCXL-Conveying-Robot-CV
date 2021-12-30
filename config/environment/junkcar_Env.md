@@ -6,7 +6,7 @@
  * @Date: 2021-05-02 12:46:23
  * @LastEditors: innns
  * @LastEditTime: 2021-09-16 14:15:34
- * @FilePath: /junkcar/config/environment/junkcar_Env.md
+ * @FilePath: /GCXL-Conveying-Robot-CV/config/environment/junkcar_Env.md
 -->
 # junkcar Env
 
