@@ -1,0 +1,10 @@
+/build/
+/.vscode/
+/cam_save/
+/ROS_RM/
+/refer/armor_detect/
+/test/__pycache__
+''$'\001\367''5@@XZ'$'\001''@8'
+*.tmp
+.VSCodeCounter/
+

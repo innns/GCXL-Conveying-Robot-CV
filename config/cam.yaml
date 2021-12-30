@@ -1,0 +1,85 @@
+%YAML:1.0
+---
+IP: "192.168.3.191"
+PORT: 4210
+res_w: 800
+res_h: 600
+white_balance: 5600
+exposure: 50
+HSV_R: !!opencv-matrix
+   rows: 2
+   cols: 3
+   dt: d
+   data: [ 156., 80., 20., 180., 255., 255. ]
+HSV_R_: !!opencv-matrix
+   rows: 2
+   cols: 3
+   dt: d
+   data: [ 0., 80., 20., 15., 255., 255. ]
+HSV_G: !!opencv-matrix
+   rows: 2
+   cols: 3
+   dt: d
+   data: [ 55., 120., 40., 90., 255., 255. ]
+HSV_B: !!opencv-matrix
+   rows: 2
+   cols: 3
+   dt: d
+   data: [ 100., 100., 20., 124., 255., 255. ]
+ratio_x: 1.3999999999999999e+00
+ratio_y: 1.2000000000000000e+00
+HC: !!opencv-matrix
+   rows: 6
+   cols: 1
+   dt: d
+   data: [ 1., 1.5000000000000000e+00, 100., 160., 40., 250. ]
+SRC_PTS_L: !!opencv-matrix
+   rows: 4
+   cols: 2
+   dt: d
+   data: [ 454., 220., 206., 286., 543., 462., 262., 546. ]
+SRC_PTS_R: !!opencv-matrix
+   rows: 4
+   cols: 2
+   dt: d
+   data: [ 272., 223., 196., 472., 524., 272., 481., 532. ]
+SRC_PTS_C: !!opencv-matrix
+   rows: 4
+   cols: 2
+   dt: d
+   data: [ 358., 199., 168., 368., 555., 360., 363., 566. ]
+DST_PTS: !!opencv-matrix
+   rows: 4
+   cols: 2
+   dt: d
+   data: [ 300., 100., 100., 300., 500., 300., 300., 500. ]
+CEN_L: !!opencv-matrix
+   rows: 2
+   cols: 1
+   dt: d
+   data: [ 300., 300. ]
+CEN_C: !!opencv-matrix
+   rows: 2
+   cols: 1
+   dt: d
+   data: [ 300., 300. ]
+CEN_R: !!opencv-matrix
+   rows: 2
+   cols: 1
+   dt: d
+   data: [ 300., 300. ]
+STORE_L: !!opencv-matrix
+   rows: 4
+   cols: 2
+   dt: d
+   data: [ 454., 220., 206., 286., 543., 462., 262., 546. ]
+STORE_R: !!opencv-matrix
+   rows: 4
+   cols: 2
+   dt: d
+   data: [ 272., 223., 196., 472., 524., 272., 481., 532. ]
+STORE_C: !!opencv-matrix
+   rows: 4
+   cols: 2
+   dt: d
+   data: [ 358., 199., 168., 368., 555., 360., 363., 566. ]

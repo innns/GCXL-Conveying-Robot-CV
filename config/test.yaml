@@ -1,0 +1,25 @@
+%YAML:1.0
+---
+res_w: 640
+res_h: 480
+white_balance: 4800
+HSV_R: !!opencv-matrix
+   rows: 2
+   cols: 3
+   dt: d
+   data: [ 156., 80., 15., 180., 255., 255. ]
+HSV_R_: !!opencv-matrix
+   rows: 2
+   cols: 3
+   dt: d
+   data: [ 0., 80., 15., 10., 255., 255. ]
+HSV_G: !!opencv-matrix
+   rows: 2
+   cols: 3
+   dt: d
+   data: [ 45., 180., 15., 85., 255., 255. ]
+HSV_B: !!opencv-matrix
+   rows: 2
+   cols: 3
+   dt: d
+   data: [ 100., 80., 15., 124., 255., 255. ]

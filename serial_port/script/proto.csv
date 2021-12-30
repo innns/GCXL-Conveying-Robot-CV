@@ -1,0 +1,6 @@
+current_color,CMD_CURRENT_COLOR,uchar_t,color_num
+all_color,CMD_ALL_COLOR,uchar_t,m1,uchar_t,m2,uchar_t,m3,uchar_t,m4,uchar_t,m5,uchar_t,m6
+target_pos,CMD_TARGET_POS,int,target_x,int,target_y,int,target_z
+QR_mission,CMD_QR_MISSION,uchar_t,m1,uchar_t,m2,uchar_t,m3,uchar_t,m4,uchar_t,m5,uchar_t,m6
+ACK,CMD_ACK,uchar_t,ack
+store_pos,CMD_TARGET_POS,int,target_x,int,target_y,int,target_z

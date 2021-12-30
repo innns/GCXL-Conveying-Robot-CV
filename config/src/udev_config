@@ -1,0 +1,32 @@
+# sudo nano /etc/udev/rules.d/camera.rules
+# sudo service udev restart
+
+# upper USB 3 port
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.1.1", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera0"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.1.2", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera1"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.1.3", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera2"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.1.4", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera3"
+
+# lowwer USB 3 port
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.2.1", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera0"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.2.2", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera1"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.2.3", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera2"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.2.4", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera3"
+
+# upper USB 2 port
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.3.1", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera0"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.3.2", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera1"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.3.3", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera2"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.3.4", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera3"
+
+# lowwer USB 2 port
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.4.1", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera0"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.4.2", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera1"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.4.3", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera2"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.4.4", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera3"
+
+# 每个树莓派接一个USB port USB3上1下2 USB2上3下4
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.1", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera0"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.2", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera1"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.3", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera2"
+KERNEL=="video[0,2,4,6]", ATTRS{devpath}=="1.4", ATTRS{idVendor}=="337b", ATTRS{idProduct}=="090c", MODE:="0777", SYMLINK+="camera3"
