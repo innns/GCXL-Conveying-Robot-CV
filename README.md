@@ -1,6 +1,8 @@
 # junkcar
 
-Author: Zhang
+Author: innns
+
+![car](config/oc.jpg)
 
 + 工程训练大赛，物流小车，视觉方案
 + 某些地方需要更换路径。建议先浏览一遍代码x
