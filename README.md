@@ -14,8 +14,8 @@ Author: innns
 
 ## 环境
 
-+ Raspberry Pi 4 2021-03-04-raspios-buster-arm64
-+ OpenCV 4.5.0
++ Raspberry Pi 4 2021-03-04-raspios-buster-arm64 （具体版本无所谓）
++ OpenCV 4.5.2 + contrib （条形码需要contrib）
 
 ### 具体环境配置
 [junkcar Env](config/environment/junkcar_Env.md)
