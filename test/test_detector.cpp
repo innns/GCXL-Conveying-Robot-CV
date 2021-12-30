@@ -59,14 +59,14 @@ int main()
             vector<Point2f> corners;                                                    //返回的检测框的四个角点坐标，如果检测到N个条码，那么维度应该是[N][4][2]
             std::vector<std::string> decoded_info;                                      //返回的解码结果，如果解码失败，则为空string
             std::vector<barcode::BarcodeType> decoded_format;                           //返回的条码类型，如果解码失败，则为BarcodeType::NONE
-             * bardet->detectAndDecode(src_img, decoded_info, decoded_format, corners);
+            // bardet->detectAndDecode(src_img, decoded_info, decoded_format, corners);
             if (bardet->detectAndDecode(src_img, decoded_info, decoded_format, corners))
                 cout << decoded_info[0];
 
             if (corners.size() != 0)
             {
                 cout << "suck2\n";
-                 * note: result 会将cross_center 返回给center
+                // note: result 会将cross_center 返回给center
                 Point2f cross_center = Point2f((corners.at(0).x + corners.at(2).x) / 2, (corners.at(0).y + corners.at(2).y) / 2);
                 cout << cross_center.x << " " << cross_center.y << "\n";
             }
@@ -74,8 +74,8 @@ int main()
         break;
         case 5:
         {
-             * Mat src_img = imread("/home/ins/junkcar/cam_save/center_R.jpg");
-             * test_get_center(src_img);
+            // Mat src_img = imread("/home/ins/junkcar/cam_save/center_R.jpg");
+            // test_get_center(src_img);
             test_show_mission();
         }
         break;
