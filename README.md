@@ -12,6 +12,8 @@ Author: innns
 
 ---
 
+## [详细文档](report\report.pdf)（其实是个课设报告改的）
+使用了[UESTC_Lab_Report_LaTeX_Template](https://github.com/zshufan/UESTC_Lab_Report_LaTeX_Template)的模板
 ## 环境
 
 + Raspberry Pi 4 2021-03-04-raspios-buster-arm64 （具体版本无所谓）

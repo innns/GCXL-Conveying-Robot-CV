@@ -1,0 +1,94 @@
+%% Creator: Inkscape 1.1.1 (3bf5ae0d25, 2021-09-20), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'process.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{472.75832748bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.10823248)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{process.pdf}}%
+    \put(0.56778483,1.09355797){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}主程序\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{process.pdf}}%
+    \put(0.57040245,0.60874366){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}切换相机\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{process.pdf}}%
+    \put(0.56937126,0.7096409){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}是\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{process.pdf}}%
+    \put(0.85017013,0.5069739){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}切换相机\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{process.pdf}}%
+    \put(0.79932488,0.60874367){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}是\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{process.pdf}}%
+    \put(0.34473217,0.60874367){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}否\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{process.pdf}}%
+    \put(0.57309149,0.84087865){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}32是否发送正确命令\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{process.pdf}}%
+    \put(0.57429711,0.97957266){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}监听32串口\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{process.pdf}}%
+    \put(0.27580163,0.90923413){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}否\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{process.pdf}}%
+    \put(0.98889496,0.42749714){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}否\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{process.pdf}}%
+    \put(0.55437225,0.14747348){\color[rgb]{0.19607843,0.19607843,0.19607843}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}串口返回数据或发送确认码\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{process.pdf}}%
+    \put(0.25208442,0.32199567){\color[rgb]{0.19607843,0.19607843,0.19607843}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}检测靶子模块\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{process.pdf}}%
+    \put(0.4470572,0.32199567){\color[rgb]{0.19607843,0.19607843,0.19607843}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}读取任务模块\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{process.pdf}}%
+    \put(0.05711163,0.32199567){\color[rgb]{0.19607843,0.19607843,0.19607843}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}检测颜色模块\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{process.pdf}}%
+    \put(0.2742945,0.5069739){\color[rgb]{0.19607843,0.19607843,0.19607843}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}判断任务\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{process.pdf}}%
+    \put(0.2742945,0.4087736){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}检测靶子\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{process.pdf}}%
+    \put(0.46926725,0.49832784){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}读取任务\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{process.pdf}}%
+    \put(0.07932171,0.49832784){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}检测颜色\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{process.pdf}}%
+  \end{picture}%
+\endgroup%

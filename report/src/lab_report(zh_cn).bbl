@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{OpenMV}
+星瞳科技.
+\newblock Openmv嵌入式图像处理.
+\newblock \url{https://book.openmv.cc/}.
+
+\bibitem{UART}
+gezp.
+\newblock rmoss\_base.
+\newblock
+  \url{https://github.com/robomaster-oss/rmoss_core/tree/main/rmoss_base}.
+
+\bibitem{Socket}
+eminfedar.
+\newblock Asynchronous sockets for c++.
+\newblock \url{https://github.com/eminfedar/async-sockets-cpp}.
+
+\end{thebibliography}
