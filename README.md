@@ -12,7 +12,7 @@ Author: innns
 
 ---
 
-## [详细文档](report\report.pdf)（其实是个课设报告改的）
+## [详细文档](report/report.pdf)（其实是个课设报告改的）
 使用了[UESTC_Lab_Report_LaTeX_Template](https://github.com/zshufan/UESTC_Lab_Report_LaTeX_Template)的模板
 ## 环境
 
