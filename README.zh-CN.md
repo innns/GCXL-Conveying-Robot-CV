@@ -2,70 +2,67 @@
 
 Author: innns
 
-[简体中文版](./README.zh-CN.md)
-
 ![car](config/oc.jpg)
 
-+ The vision code of GCXL conveying robot.
-+ The filepath needs to be replaced in some places.
-+ It is recommended to add your own ROI to the identified color area, paying attention to the image size and the conditions for judging the material
-+ The coefficient of the distance deviation of the pixels from the center of the target from the distance moved by the robotic arm is calculated on our vehicle, and needs to be recalculated for different vehicles shooting at different angles (we have a camera that shoots the target diagonally downwards)
-+ The serial code uses content from `2019 RoboMasterOS` written by `gezp`, GPL license.
++ 工程训练大赛，物流小车，智能搬运机器人，视觉方案
++ 某些地方需要更换路径。建议先浏览一遍代码x
++ 建议给识别颜色区域加上自己的ROI，注意图像尺寸以及判断物料的条件
++ 靶心像素距离偏离与机械臂移动距离的系数是在我们车上计算出的，不同车不同角度拍摄都需要重新计算（我们有一个斜向下拍靶子的摄像头）
++ 串口代码使用了`gezp`写的`2019 RoboMasterOS`中的内容，GPL协议。
+
 ---
 
-## [Chinese docs](report/report.pdf)
+## [详细文档](report/report.pdf)（其实是个课设报告改的）
+使用了[UESTC_Lab_Report_LaTeX_Template](https://github.com/zshufan/UESTC_Lab_Report_LaTeX_Template)的模板
+## 环境
 
-using [UESTC_Lab_Report_LaTeX_Template](https://github.com/zshufan/UESTC_Lab_Report_LaTeX_Template)
++ Raspberry Pi 4 2021-03-04-raspios-buster-arm64 （具体版本无所谓）
++ OpenCV 4.5.2 + contrib （条形码需要contrib）
 
-## Environment
-
-+ Raspberry Pi 4 *-raspios-buster-arm64  
-+ OpenCV 4.5.2 + contrib （read barcode need contrib）
-
-### Specific
+### 具体环境配置
 [junkcar Env](config/environment/junkcar_Env.md)
 
-### How to Build
+### 编译
 ```shell
-# cd /path-to-CMakeLists/
+# cd到包含CMakeLists.txt的这个目录
 mkdir build
 cd build
 cmake ..
 make -j8
-# main is the executable file
+# main 文件就是可执行文件
 ```
 
-## Communication Protocol
+## 通信协议
 
-### Data Frame Format
+### 数据帧封装
 
-16 Byte data
+16字节数据帧
 
-| Head*1   | CMD*1    | DATA*12     | CHECK*1   | TAIL*1    |
+| 帧头*1   | 命令位*1 | 数据位*12   | 校验位*1  | 帧尾*1    |
 | -------- | -------- | ----------- | --------- | --------- |
 | [0] 0xAA | [1] CMD  | [2-13] DATA | [14] 0xF0 | [15] 0xBB |
 
-Little-Endian
+小端模式
 
-### Specific Protocol
+### 协议定义
 
 ```cpp
 typedef enum : unsigned char
 {
-    // >>>>>> send
-    CMD_CURRENT_COLOR = 0x01, // current color
-    CMD_TARGET_POS = 0x02,    // target
-    CMD_QR_MISSION = 0x03,    // mission from barcode
-    CMD_ALL_COLOR = 0x04,     // colors
-    CMD_ACK = 0x05,           // ack
-    CMD_STORE_POS = 0x06,     // storage pos
+    // >>>>>> 发送用
+    CMD_CURRENT_COLOR = 0x01, // 当前检测到的颜色 条形码读取的颜色
+    CMD_TARGET_POS = 0x02,    // 当前检测到的靶心
+    CMD_QR_MISSION = 0x03,    // 二维码读取的任务
+    CMD_ALL_COLOR = 0x04,     // 所有颜色读取
+    CMD_ACK = 0x05,           // 确认 切换相机 切换靶心等
+    CMD_STORE_POS = 0x06,     // 库存区域位置
 
-    // >>>>>> recv
-    CMD_SET_MODE = 0x11,      // set mode
-    CMD_SWITCH_CAM = 0x12     // switch camera
+    // >>>>>> 接收用
+    CMD_SET_MODE = 0x11,      // 检测颜色/检测靶心
+    CMD_SWITCH_CAM = 0x12     // 切换相机
 } SerialPortCMD;
 
-//>>>>>> Pi >>>>>
+//>>>>>>树莓派端数据接口>>>>>
 bool SerialInterface::current_color(char color_num)
 {
     FixedPacket packet;
@@ -127,11 +124,11 @@ bool SerialInterface::temp(int target_x, int target_y, int target_z)
 
 ```
 
-#### Pi to 32
+#### Pi发给32
 
-##### Current Color
+##### 当前颜色
 
-| Head*1   | CMD*1    | DATA*12          | CHECK*1   | TAIL*1    |
+| 帧头*1   | 命令位*1 | 数据位*1         | 校验位*1  | 帧尾*1    |
 | -------- | -------- | ---------------- | --------- | --------- |
 | [0] 0xAA | [1] 0x01 | [2] (char) COLOR | [14] 0xF0 | [15] 0xBB |
 
@@ -145,19 +142,19 @@ enum COLOR : unsigned char
 };
 ```
 
-##### Target Pos
+##### 靶心位置
 
-| Head*1   | CMD*1    | DATA*12                                                     | CHECK*1   | TAIL*1    |
+| 帧头*1   | 命令位*1  | 数据位*12                                                    | 校验位*1   | 帧尾*1    |
 | -------- | -------- | ----------------------------------------------------------- | --------- | --------- |
 | [0] 0xAA | [1] 0x02 | [2-5] (int) pos_x ; [6-9] (int) pos_y ; [10-13] (int) pos_z | [14] 0xF0 | [15] 0xBB |
 
-+ Left pos_x +
-+ Forward pos_y +
-+ Counterclockwise pos_z +
++ 左 pos_x 正
++ 前 pos_y 正
++ 逆 pos_z 正
 
-##### Mission Order
+##### 任务顺序
 
-| Head*1   | CMD*1    | DATA*12                | CHECK*1   | TAIL*1    |
+| 帧头*1   | 命令位*1  | 数据位*12               | 校验位*1   | 帧尾*1    |
 | -------- | -------- | ---------------------- | --------- | --------- |
 | [0] 0xAA | [1] 0x03 | [2-7] (char) COLOR * 6 | [14] 0xF0 | [15] 0xBB |
 
@@ -170,9 +167,9 @@ enum COLOR : unsigned char
     BLUE = 0x03
 };
 ```
-##### Scan All Colors
+##### 一次扫完所有颜色
 
-| Head*1   | CMD*1    | DATA*12                | CHECK*1   | TAIL*1    |
+| 帧头*1   | 命令位*1  | 数据位*12               | 校验位*1   | 帧尾*1    |
 | -------- | -------- | ---------------------- | --------- | --------- |
 | [0] 0xAA | [1] 0x04 | [2-7] (char) COLOR * 6 | [14] 0xF0 | [15] 0xBB |
 
@@ -186,22 +183,22 @@ enum COLOR : unsigned char
 };
 ```
 
-#### 32 to Pi
+#### 32发给Pi
 
-##### Set Mode
+##### 设置 MODE
 
-| Head*1   | CMD*1    | DATA*12                          | CHECK*1   | TAIL*1    |
+| 帧头*1   | 命令位*1  | 数据位*12                         | 校验位*1   | 帧尾*1    |
 | -------- | -------- | -------------------------------- | --------- | --------- |
 | [0] 0xAA | [1] 0x11 | [2] DETECT_MODE ; [3] TARGET_POS | [14] 0xF0 | [15] 0xBB |
 
 ```cpp
 enum DETECT_MODE : unsigned char
 {
-    DEFAULT_MODE = 0x00,    // Null
-    COLOR_MODE = 0x01,      // read color
-    TARGET_MODE = 0x02,     // find target
-    QR_MODE = 0x03,         // read barcode
-    ALL_COLOR_MODE = 0x04,  // detect all color
+    DEFAULT_MODE = 0x00,   // 空模式 0
+    COLOR_MODE = 0x01,     // 读取颜色 1 国赛读取条形码
+    TARGET_MODE = 0x02,    // 寻找靶心 2
+    QR_MODE = 0x03,        // 读取二维码 3
+    ALL_COLOR_MODE = 0x04,  // 读取所有颜色 4
     STORE_MODE = 0x06
 };
 
@@ -216,9 +213,9 @@ enum TARGET_POS : unsigned char
 ```
 
 
-##### Switch Camera
+##### 切换相机
 
-| Head*1   | CMD*1    | DATA*12     | CHECK*1   | TAIL*1    |
+| 帧头*1   | 命令位*1  | 数据位*12    | 校验位*1   | 帧尾*1    |
 | -------- | -------- | ----------- | --------- | --------- |
 | [0] 0xAA | [1] 0x12 | [2] CAM_NUM | [14] 0xF0 | [15] 0xBB |
 
